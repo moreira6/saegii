@@ -376,8 +376,7 @@ const q=questions[current];
 
 document.getElementById("subject").textContent=q.subject;
 document.getElementById("number").textContent="QUESTÃO "+(current+1);
-document.getElementById("question").textContent=q.q;
-
+document.getElementById("question").textContent=q.question || q.q;
 const support=document.getElementById("support");
 support.style.display=q.support?"block":"none";
 support.textContent=q.support||"";
